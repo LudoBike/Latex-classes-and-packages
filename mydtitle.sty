@@ -12,8 +12,8 @@
   set. Please fix this.}
 
 
-\renewcommand*{\maketitle}{%
-    \centering
+\renewcommand*{\maketitle}{
+  \begin{center}
     \begin{minipage}{0.4\textwidth}
       \begin{flushleft} \large
         \@author \\
@@ -33,6 +33,7 @@
     {\LARGE\@subtitle\unskip\par}
     \vspace{0.5cm}
     {\scshape\Large\@discipline\par}
-    \vspace{2.5cm}       
+    \vspace{2.5cm}
+  \end{center}
 }
 \endinput
