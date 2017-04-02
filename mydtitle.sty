@@ -1,0 +1,38 @@
+\ProvidesPackage{mydtitle}[2017/04/02 Maketitle pour les devoirs]
+
+
+\newcommand*{\subtitle}[1]{\gdef\@subtitle{#1}}
+\newcommand*{\@subtitle}{}
+
+\newcommand*{\class}[1]{\gdef\@class{#1}}
+\newcommand*{\@class}{}
+
+\newcommand*{\discipline}[1]{\gdef\@discipline{#1}}
+\newcommand*{\@discipline}{\texttt{\string\discipline} currently not
+  set. Please fix this.}
+
+
+\renewcommand*{\maketitle}{%
+    \centering
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushleft} \large
+        \@author \\
+        \@class
+      \end{flushleft}
+    \end{minipage}
+    ~
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushright} \large
+        \@date \\
+        \hspace{1cm}
+      \end{flushright}
+    \end{minipage}\par
+    \vspace{1.5cm}
+
+    {\Huge\@title\unskip\strut\par}
+    {\LARGE\@subtitle\unskip\par}
+    \vspace{0.5cm}
+    {\scshape\Large\@discipline\par}
+    \vspace{2.5cm}       
+}
+\endinput
