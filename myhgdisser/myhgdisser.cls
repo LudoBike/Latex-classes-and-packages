@@ -16,6 +16,8 @@ d'histoire géographie]
 \RequirePackage[T1]{fontenc}
 \RequirePackage[francais]{babel}
 \RequirePackage{mydtitle}
+
+% Geometry
 \RequirePackage[a4paper, bottom=2cm, top=3cm]{geometry}
 
 % Basic sectionning
