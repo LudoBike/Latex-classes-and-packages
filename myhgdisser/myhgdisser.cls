@@ -14,7 +14,7 @@ d'histoire géographie]
 % Packages
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
-\RequirePackage[francais]{babel}
+\RequirePackage[french]{babel}
 \RequirePackage{mydtitle}
 
 % Geometry
