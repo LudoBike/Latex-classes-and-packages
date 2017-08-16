@@ -13,22 +13,22 @@
 
 
 \renewcommand*{\maketitle}{
+  \noindent
+  \begin{minipage}{0.49\textwidth}
+    \begin{flushleft} \large
+      \@author \\
+      \@class
+    \end{flushleft}
+  \end{minipage}
+  ~
+  \begin{minipage}{0.49\textwidth}
+    \begin{flushright} \large
+      \@date \\
+      \vspace{1em}
+    \end{flushright}
+  \end{minipage}\par
+  \vspace{1.5cm}
   \begin{center}
-    \begin{minipage}{0.4\textwidth}
-      \begin{flushleft} \large
-        \@author \\
-        \@class
-      \end{flushleft}
-    \end{minipage}
-    ~
-    \begin{minipage}{0.4\textwidth}
-      \begin{flushright} \large
-        \@date \\
-        \hspace{1cm}
-      \end{flushright}
-    \end{minipage}\par
-    \vspace{1.5cm}
-
     {\Huge\@title\unskip\strut\par}
     {\LARGE\@subtitle\unskip\par}
     \vspace{0.5cm}
