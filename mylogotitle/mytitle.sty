@@ -1,0 +1,23 @@
+\ProvidesPackage{mylogotitle}[Puntos et chaudas]
+
+
+\newcommand*{\subtitle}[1]{\gdef\@subtitle{#1}}
+\newcommand*{\@subtitle}{}
+
+\RequirePackage{graphics}
+
+\renewcommand*{\maketitle}{
+  \noindent
+  \begin{center}
+    {\scshape\LARGE\@title\unskip\strut\par}
+    {\scshape\Large\@subtitle\unskip\par}
+    \vspace{0.5cm}
+    {\large\@author\unskip\par}
+    \vspace{0.5cm}
+    \includegraphics[width=0.2\textwidth]{logo_ponts.jpg}\unskip\par
+    \vspace{0.5cm}
+    {\large\@date\par}
+    \vspace{1cm}
+  \end{center}
+}
+\endinput
